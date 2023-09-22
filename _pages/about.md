@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research in ML Applications ⇆ Applied math ⇆ Teaching. 
+subtitle: Research in applied ML for Social Good ⇆ Applied math ⇆ Teaching. 
 
 profile:
   align: left

@@ -106,7 +106,7 @@ nav_order: 5
     <div class="row">
       <div class="col-sm-10">
         <h5 class="card-title">Game Theory</h5>
-        <h6 class="card-subtitle font-italic">Fall 2020, Spring 2020: TA of <a href="https://economia.uniandes.edu.co/nupia" target="_blank" rel="noopener noreferrer">Oskar Nupia</a></h6>
+        <h6 class="card-subtitle font-italic">Fall 2020, Spring 2020: TA of <a href="https://economia.uniandes.edu.co/eslava" target="_blank" rel="noopener noreferrer">Marcela Eslava</a></h6>
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@ nav_order: 5
     <div class="row">
       <div class="col-sm-10">
         <h5 class="card-title">Microeconomics III</h5>
-        <h6 class="card-subtitle font-italic">Spring 2020: TA of <a href="https://economia.uniandes.edu.co/eslava" target="_blank" rel="noopener noreferrer">Marcela Eslava</a></h6>
+        <h6 class="card-subtitle font-italic">Spring 2020: TA of <a href="https://economia.uniandes.edu.co/nupia" target="_blank" rel="noopener noreferrer">Oskar Nupia</a></h6>
       </div>
     </div>
   </div>
