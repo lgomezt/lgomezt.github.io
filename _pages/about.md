@@ -22,3 +22,5 @@ I hold a Master's degree in Economics from Universidad de los Andes. My thesis, 
 A demo of the predictive application is available <a href='https://perreologia.quantil.co/'>here</a>.
 
 I currently serve as an Adjunct Professor at Universidad de los Andes, offering courses on machine learning and game theory. Additionally, I hold the position of Deputy Director of the Data Mining Department at <a href='https://quantil.co/en'>Quantil</a>. 
+
+

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The research "Modelling Underreported Spatio-Temporal Crime Events" was accepted to be presented at the <a href="https://congresoestadistica.sce.org.co/">XV Latin American Congress of Statistical Societies (CLATSE)</a>
+The research paper titled 'Modelling Underreported Spatio-Temporal Crime Events' has been accepted for presentation at the <a href="https://congresoestadistica.sce.org.co/">XV Latin American Congress of Statistical Societies (CLATSE)</a>, where I will be the speaker.
