@@ -1,0 +1,45 @@
+.about-page {
+  padding-top: 80px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  .about-title {
+    font-size: 3.5rem;
+  }
+}
+
+.about-content {
+  max-width: 800px;
+  line-height: 1.8;
+  color: #475569;
+  font-size: 1.1rem;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-content a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.about-content a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
