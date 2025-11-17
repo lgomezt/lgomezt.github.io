@@ -18,7 +18,7 @@ function App() {
   }, [])
 
   return (
-    <Router basename="/personal_webpage">
+    <Router>
       <div className="App">
         <Header />
         <main>
