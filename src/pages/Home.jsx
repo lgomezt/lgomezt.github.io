@@ -92,7 +92,7 @@ function Home() {
               </div>
               {/* Research Areas Cards */}
               <div className="home-research-areas">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {PROJECTS.map((proj) => {
                     // Check if an article exists for this project by checking if the article ID exists
                     const hasArticle = availableArticleIds.includes(proj.id);

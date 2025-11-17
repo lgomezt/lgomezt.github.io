@@ -1,10 +1,18 @@
 .news-item {
   display: flex;
-  gap: 1.5rem;
-  padding-left: 1.5rem;
-  padding-bottom: 2rem;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
   position: relative;
   transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+@media (min-width: 640px) {
+  .news-item {
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .news-item.clickable {
@@ -53,6 +61,13 @@
   color: #475569;
   line-height: 1.7;
   white-space: normal;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 640px) {
+  .news-text {
+    font-size: 1rem;
+  }
 }
 
 .news-text a {

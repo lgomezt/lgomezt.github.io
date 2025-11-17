@@ -22,6 +22,13 @@
     line-height: 1.6;
     color: #0f172a;
     background-color: #f8fafc;
+    font-size: 16px;
+  }
+
+  @media (min-width: 640px) {
+    body {
+      font-size: 16px;
+    }
   }
 
   code {
@@ -36,5 +43,23 @@
 
   a:hover {
     color: #06b6d4;
+  }
+
+  /* Touch target improvements */
+  button,
+  a[role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Improve touch interactions on mobile */
+  @media (hover: none) and (pointer: coarse) {
+    a:hover,
+    button:hover {
+      /* Prevent hover states from sticking on touch devices */
+      opacity: 1;
+    }
   }
 }

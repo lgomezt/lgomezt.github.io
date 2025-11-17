@@ -39,8 +39,10 @@
   justify-content: center;
   color: #64748b;
   transition: all 0.2s ease;
-  padding: 0.5rem;
+  padding: 0.625rem;
   border-radius: 8px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .footer-icon:hover {
