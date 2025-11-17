@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect, Suspense } from 'react'
 import Footer from '../components/Footer'
-import { PUBLICATIONS } from '../constants/data'
+import { PUBLICATIONS, PROJECTS } from '../constants/data'
 import { parseMarkdown } from '../utils/markdown'
 import './BlogArticle.css'
 
@@ -9,12 +9,12 @@ function BlogArticle() {
   const { id } = useParams()
   const navigate = useNavigate()
   
-  // Find the publication by id (the id in the URL should match the publication id)
-  // Or find by blog link path
+  // Find the publication or project by id (the id in the URL should match the id)
+  // First check publications, then projects
   const publication = PUBLICATIONS.find(pub => 
     pub.id === id || 
     (pub.links && pub.links.blog && pub.links.blog === `/blog/${id}`)
-  )
+  ) || PROJECTS.find(proj => proj.id === id)
   
   if (!publication) {
     return (
@@ -111,7 +111,9 @@ function BlogArticle() {
             </div>
           </div>
 
-          {publication.links && (
+          {publication.links && 
+           typeof publication.links === 'object' && 
+           !Array.isArray(publication.links) && (
             <div className="blog-links">
               <h3>Links</h3>
               <div className="publication-links">

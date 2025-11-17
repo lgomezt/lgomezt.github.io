@@ -101,7 +101,7 @@ export const PROJECTS = [
     abstract: '',
     tags: ['Education', 'Learning'],
     links: [],
-    authors: 'Gómez Tobón, Lucas',
+    authors: 'Lucas Gómez-Tobón',
     year: "2025",
     status: 'in-progress',
     type: 'project',
@@ -114,7 +114,7 @@ export const PROJECTS = [
     abstract: '',
     tags: ['Work', 'Cooperation', 'Agents'],
     links: [],
-    authors: 'Gómez Tobón, Lucas',
+    authors: 'Lucas Gómez-Tobón',
     year: "2025",
     status: 'in-progress',
     type: 'project',
@@ -127,7 +127,7 @@ export const PROJECTS = [
     abstract: '',
     tags: ['Values', 'Preferences'],
     links: [],
-    authors: 'Gómez Tobón, Lucas',
+    authors: 'Lucas Gómez-Tobón',
     year: null,
     status: 'in-progress',
     type: 'project',
@@ -158,6 +158,18 @@ export const NEWS = [
     date: '2023-07-26',
     content: 'Colombia\'s former Minister of Finance discussed our research, [Modelling Underreported Spatio-Temporal Crime Events](/blog/modelling-underreported-crime), in a [radio interview](https://alacarta.caracol.com.co/audio/caracol_radio_6amhoyporhoy_20230726_070000_080000?mm_time=2206&mm_time_id=caracol_radio_6amhoyporhoy_20230726_070000_080000&autoplay=true).',
     blog: ''
-  }
+  },
+  {
+    id: 'news-5',
+    date: '2025-10-06',
+    content: 'I am co-organizing the [Futures Lab](https://blog.google/intl/en-ca/company-news/outreach-initiatives/our-new-partnership-with-the-university-of-waterloo-on-the-future-of-learning-and-work/), an 8-week **AI prototyping workshop** with Google, where we are actively studying how GenAI tools influence collaboration between technical and non-technical teams.',
+    blog: ''
+  },
+  {
+    id: 'news-6',
+    date: '2025-10-22',
+    content: 'My research on [Learning by Teaching](/blog/teaching-the-agent) has been integrated into the new **Google Chair in the Future of Work.**',
+    blog: '/blog/teaching-the-agent'
+  },
 ];
 

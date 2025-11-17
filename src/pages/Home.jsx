@@ -6,7 +6,19 @@ import Footer from '../components/Footer'
 import { PUBLICATIONS, PROJECTS, NEWS } from '../constants/data'
 import './Home.css'
 
+// Dynamically get all available article files
+// This uses Vite's import.meta.glob to discover all .jsx files in the articles folder
+const articleModules = import.meta.glob('../articles/*.jsx', { eager: false })
+// Extract article IDs from file paths (e.g., '../articles/teaching-the-agent.jsx' -> 'teaching-the-agent')
+const getAvailableArticleIds = () => {
+  return Object.keys(articleModules).map(path => {
+    const match = path.match(/\/articles\/(.+)\.jsx$/)
+    return match ? match[1] : null
+  }).filter(Boolean)
+}
+
 function Home() {
+  const availableArticleIds = getAvailableArticleIds()
   const Section = ({ id, title, children }) => (
     <section id={id} className="section py-16 sm:py-20">
       {title && <h2 className="section-title">{title}</h2>}
@@ -81,11 +93,22 @@ function Home() {
               {/* Research Areas Cards */}
               <div className="home-research-areas">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  {PROJECTS.map((proj) => (
-                    <Link key={proj.id} to={`/projects/${proj.id}`} className="block">
-                      <ProjectCard project={proj} />
-                    </Link>
-                  ))}
+                  {PROJECTS.map((proj) => {
+                    // Check if an article exists for this project by checking if the article ID exists
+                    const hasArticle = availableArticleIds.includes(proj.id);
+                    const blogPath = hasArticle ? `/blog/${proj.id}` : null;
+                    
+                    const CardWrapper = blogPath ? Link : 'div';
+                    const wrapperProps = blogPath 
+                      ? { to: blogPath, className: 'block' }
+                      : { className: 'block' };
+                    
+                    return (
+                      <CardWrapper key={proj.id} {...wrapperProps}>
+                        <ProjectCard project={proj} />
+                      </CardWrapper>
+                    );
+                  })}
                 </div>
               </div>
             </div>
