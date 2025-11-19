@@ -85,7 +85,7 @@ export default function SocialAgenticsArticle() {
             </p>
           </div>
           <div className="testbed-image">
-            <img src="" alt="" />
+            <img src="/blogs/social-agentics/the_office_agentics_demo.gif" alt="the office agentics demo" />
           </div>
           <div className="testbed-links">
             <a 
