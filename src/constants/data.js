@@ -26,6 +26,7 @@
  * - Update the id, date, content, and blog fields
  * - date: use ISO format (YYYY-MM-DD) for proper chronological sorting (e.g., '2023-06-15')
  * - blog: optional field - if provided (e.g., '/blog/modelling-underreported-crime'), the news item will be clickable and link to the blog article. If empty or omitted, the item won't be clickable.
+ * - visible: optional field - set to false to hide the news item without deleting it. Defaults to true if omitted.
  */
 
 export const PUBLICATIONS = [
@@ -95,7 +96,7 @@ export const PUBLICATIONS = [
 export const PROJECTS = [
   {
     id: 'teaching-the-agent',
-    image: '/teaching_the_agent.png',
+    image: '/webvideo.gif',
     title: 'Teaching the Agent',
     description: 'We learn better when we teach. We\'re designing agents that act as **less knowledgeable peers** to be taught by users.',
     abstract: '',
@@ -139,37 +140,43 @@ export const NEWS = [
     id: 'news-1',
     date: '2023-10-31',
     content: 'Guided an indigenous student research initiative to evaluate an HPV educational intervention, resulting in a poster presentation at [EAAMO \'23](https://www.eaamo.org/projects/rednacecyt-md4sg-2023-summer-of-science-program).',
-    blog: ''
+    blog: '',
+    visible: false,
   },
   {
     id: 'news-2',
     date: '2023-10-09',
     content: 'I will present our paper, [Modelling Underreported Spatio-Temporal Crime Events](/blog/modelling-underreported-crime), at the [XV Latin American Congress of Statistical Societies (CLATSE)](https://congresoestadistica.sce.org.co).',
-    blog: ''
+    blog: '',
+    visible: false,
   },
   {
     id: 'news-3',
     date: '2023-09-22',
     content: 'I developed the [tidyX](https://tidyx.readthedocs.io/en/latest/) Python library to facilitate text preprocessing for Spanish social media data.',
-    blog: ''
+    blog: '',
+    visible: true,
   },
   {
     id: 'news-4',
     date: '2023-07-26',
     content: 'Colombia\'s former Minister of Finance discussed our research, [Modelling Underreported Spatio-Temporal Crime Events](/blog/modelling-underreported-crime), in a [radio interview](https://alacarta.caracol.com.co/audio/caracol_radio_6amhoyporhoy_20230726_070000_080000?mm_time=2206&mm_time_id=caracol_radio_6amhoyporhoy_20230726_070000_080000&autoplay=true).',
-    blog: ''
+    blog: '',
+    visible: false,
   },
   {
     id: 'news-5',
     date: '2025-10-06',
     content: 'I am co-organizing the [Futures Lab](https://blog.google/intl/en-ca/company-news/outreach-initiatives/our-new-partnership-with-the-university-of-waterloo-on-the-future-of-learning-and-work/), an 8-week **AI prototyping workshop** with Google, where we are actively studying how GenAI tools influence collaboration between technical and non-technical teams.',
-    blog: ''
+    blog: '',
+    visible: true,
   },
   {
     id: 'news-6',
     date: '2025-10-22',
     content: 'My research on [Learning by Teaching](/blog/teaching-the-agent) has been integrated into the new **Google Chair in the Future of Work.**',
-    blog: '/blog/teaching-the-agent'
+    blog: '/blog/teaching-the-agent',
+    visible: true,
   },
 ];
 

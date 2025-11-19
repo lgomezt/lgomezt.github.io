@@ -3,7 +3,6 @@ import { parseMarkdown } from '../utils/markdown'
 export default function TeachingTheAgentArticle() {
   return (
     <div className="article-content">
-    <h2>Motivation</h2>
     <p>
       Generative AI is transforming education, but there is growing evidence of student over-reliance on this technology and overconfidence 
       in their abilities. While it is impossible to ignore that students will use AI, simply inserting it into 
@@ -19,7 +18,7 @@ export default function TeachingTheAgentArticle() {
       <li> {parseMarkdown("**Metacognitive Mechanisms:** As learners attempt to formulate an explanation, they naturally encounter Knowledge Gaps. This awareness triggers self-regulation, motivating them to resolve contradictions. Evidence suggests learners preparing to teach employ significantly more metacognitive strategies than those preparing for a test.")}</li>
       <li> {parseMarkdown("**Social Mechanisms:** The responsibility for another\'s learning creates a sense of purpose. This social pressure increases agency and motivates the learner to invest more effort in mastering the material.")}</li>
     </ul>
-    <p>Here are some examples of ongoing projects:</p>
+    <p>Here are some examples of ongoing projects that builds on these mechanisms:</p>
 
     <div className="testbeds-container">
       <div className="testbed-box">
@@ -31,7 +30,8 @@ export default function TeachingTheAgentArticle() {
             </p>
           </div>
           <div className="testbed-image">
-            <img src="/blogs/teaching-the-agent/learning_by_debugging.png" alt="Learning to Code testbed" />
+            {/* <img src="/blogs/teaching-the-agent/learning_by_debugging.png" alt="Learning to Code testbed" /> */}
+            <img src="/blogs/teaching-the-agent/learning_by_debugging.gif" alt="Learning to Code testbed" />
           </div>
           <div className="testbed-links">
             <a 

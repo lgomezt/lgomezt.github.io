@@ -125,10 +125,13 @@
 }
 
 .blog-image-container {
-  width: 100%;
-  margin-bottom: 2rem;
+  width: 80%;
+  margin: 0 auto 2rem;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-image {
@@ -435,7 +438,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px dashed #cbd5e1;
   margin: 0.5rem 0;
 }
 
@@ -501,5 +503,95 @@
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(8, 145, 178, 0.2);
+}
+
+/* Notion-style callout */
+.notion-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.notion-callout-yellow {
+  background-color: #FDEBB9;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.notion-callout-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.notion-callout-content {
+  flex: 1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #334155;
+}
+
+@media (min-width: 640px) {
+  .notion-callout-content {
+    font-size: 1rem;
+  }
+}
+
+/* Related Work Section */
+.blog-related-work-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.blog-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .blog-section-title {
+    font-size: 2.25rem;
+  }
+}
+
+.related-work-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.related-work-subtitle:first-of-type {
+  margin-top: 0;
+}
+
+.related-publications-section {
+  margin-bottom: 3rem;
+}
+
+.related-publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.workshop-timeline-section {
+  margin-top: 2rem;
+}
+
+.workshop-timeline-container {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  border-left: 2px solid #e2e8f0;
 }
 

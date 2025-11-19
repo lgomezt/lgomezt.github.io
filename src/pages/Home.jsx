@@ -122,6 +122,7 @@ function Home() {
           <div className="max-w-2xl mx-auto">
             <div className="relative border-l-2 border-slate-200">
               {[...NEWS]
+                .filter(item => item.visible !== false)
                 .sort((a, b) => new Date(b.date) - new Date(a.date))
                 .map((item, index) => {
                   const hasBlogLink = item.blog && item.blog.trim() !== '';

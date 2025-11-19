@@ -58,7 +58,7 @@ function About() {
                   <h3 className="about-experience-title">Data Mining & Applied Math</h3>
                   <p className="about-experience-text">
                     I progressed from Junior Researcher to Deputy Director of the Data Mining Department at an 
-                    <a href="https://quantil.co/en/" target="_blank" rel="noopener noreferrer">applied math lab</a>. 
+                    <a href="https://quantil.co/en/" target="_blank" rel="noopener noreferrer"> applied math lab</a>. 
                     My work included deploying machine learning models for credit scoring, fraud detection, portfolio optimization, and macroeconomic forecasting.
                   </p>
                 </div>
