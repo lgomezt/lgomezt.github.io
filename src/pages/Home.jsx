@@ -146,30 +146,13 @@ function Home() {
         {/* Publications */}
         <Section id="publications" title="Selected Publications">
           <div className="space-y-12">
-            {PUBLICATIONS.map((pub, index) => {
-              // Check if blog link exists (new format: object) and is internal
-              const hasBlogLink = pub.links && 
-                typeof pub.links === 'object' && 
-                !Array.isArray(pub.links) &&
-                pub.links.blog && 
-                pub.links.blog.trim() !== '';
-              
-              // If blog link is internal (doesn't start with http), use it. Otherwise use /blog/:id
-              const blogPath = hasBlogLink 
-                ? (pub.links.blog.startsWith('http') ? null : pub.links.blog)
-                : null;
-              
-              const CardWrapper = blogPath ? Link : 'div';
-              const wrapperProps = blogPath 
-                ? { to: blogPath, className: 'block' }
-                : { className: 'block' };
-              
-              return (
-                <CardWrapper key={pub.id} {...wrapperProps}>
-                  <PublicationCard publication={pub} isReversed={index % 2 !== 0} />
-                </CardWrapper>
-              );
-            })}
+            {PUBLICATIONS.map((pub, index) => (
+              <PublicationCard 
+                key={pub.id} 
+                publication={pub} 
+                isReversed={index % 2 !== 0} 
+              />
+            ))}
           </div>
         </Section>
       </main>

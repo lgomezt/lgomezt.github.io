@@ -1,8 +1,9 @@
 import './PublicationCard.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { parseMarkdown } from '../utils/markdown'
 
 function PublicationCard({ publication, isReversed = false }) {
+  const navigate = useNavigate();
   const getLinkIcon = (type) => {
     switch (type) {
       case 'pdf': return '📄';
@@ -104,9 +105,22 @@ function PublicationCard({ publication, isReversed = false }) {
   };
 
   const availableLinks = getAvailableLinks();
+  
+  // Check if there's an internal blog link
+  const blogLink = availableLinks.find(link => link.type === 'blog' && !link.url.startsWith('http'));
+
+  const handleCardClick = () => {
+    if (blogLink) {
+      navigate(blogLink.url);
+    }
+  };
 
   return (
-    <div className={`publication-card ${isReversed ? 'reversed' : ''}`}>
+    <div 
+      className={`publication-card ${isReversed ? 'reversed' : ''}`}
+      onClick={handleCardClick}
+      style={{ cursor: blogLink ? 'pointer' : 'default' }}
+    >
       <div className="publication-content">
         <div className={`publication-layout ${isReversed ? 'flex-row-reverse' : ''}`}>
           <div className="publication-image-container">
