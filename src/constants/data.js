@@ -75,7 +75,7 @@ export const PUBLICATIONS = [
     id: 'perreology',
     image: '/spectogram.gif',
     conference: 'Master\'s Thesis',
-    title: 'Perreology: Leveraging Music in Statistical Analysis',
+    title: 'Hips don\'t lie: Leveraging Music in Statistical Analysis',
     shortAbstract: 'Can music consumption track economic sentiment? We created high-dimensional embeddings of Colombia\'s daily top charts to quantify acoustic patterns over time. Our results show that shifts in musical preferences are strongly correlated with the Consumer Confidence Index, explaining over 80% of its variance.',
     longAbstract: '',
     tags: ['Music Information Retrieval', 'Economic Forecasting'],
