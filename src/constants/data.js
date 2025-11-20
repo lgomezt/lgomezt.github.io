@@ -174,7 +174,7 @@ export const NEWS = [
   {
     id: 'news-6',
     date: '2025-10-22',
-    content: 'My research on [Learning by Teaching](/blog/teaching-the-agent) has been integrated into the new **Google Chair in the Future of Work.**',
+    content: 'My research on [Learning by Teaching](/blog/teaching-the-agent) has been integrated into the new **Google Chair in the Future of Work and Learning.**',
     blog: '/blog/teaching-the-agent',
     visible: true,
   },
