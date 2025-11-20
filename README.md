@@ -55,11 +55,3 @@ This project uses GitHub Actions to automatically build and deploy to GitHub Pag
 2. Navigate to "Pages" in the left sidebar
 3. Under "Source", select "GitHub Actions"
 4. The workflow will automatically deploy on every push to `main`
-
-### Manual Deployment
-
-If you prefer to deploy manually:
-
-1. Build the project: `npm run build`
-2. The `dist` folder contains the static files
-3. You can deploy the `dist` folder contents to GitHub Pages
