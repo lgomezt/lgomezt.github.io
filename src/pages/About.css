@@ -204,4 +204,34 @@
   font-weight: 600;
 }
 
+/* About List */
+.about-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
+.about-list li {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .about-list li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-list li {
+    font-size: 1.1rem;
+  }
+}
+
+.about-list strong {
+  color: #0f172a;
+  font-weight: 600;
+}
