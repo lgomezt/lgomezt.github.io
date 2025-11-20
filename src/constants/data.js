@@ -167,7 +167,7 @@ export const NEWS = [
   {
     id: 'news-5',
     date: '2025-10-06',
-    content: 'I am co-organizing the [Futures Lab](https://blog.google/intl/en-ca/company-news/outreach-initiatives/our-new-partnership-with-the-university-of-waterloo-on-the-future-of-learning-and-work/), an 8-week **AI prototyping workshop** with Google, where we are actively studying how GenAI tools influence collaboration between technical and non-technical teams.',
+    content: 'I am co-organizing the [Futures Lab](https://blog.google/intl/en-ca/company-news/outreach-initiatives/our-new-partnership-with-the-university-of-waterloo-on-the-future-of-learning-and-work/), an 8-week **AI prototyping workshop** with Google, where we study how GenAI tools influence collaboration between technical and non-technical teams.',
     blog: '',
     visible: true,
   },

@@ -1,4 +1,5 @@
 import Footer from '../components/Footer'
+import { FileText } from 'lucide-react' // Assuming you are using lucide-react or similar for icons
 import './About.css'
 
 function About() {
@@ -9,21 +10,33 @@ function About() {
 
         <div className="about-content-wrapper">
           {/* Image Side */}
-          <div className="about-image-container">
+          <div className="about-image-container flex flex-col items-center gap-4">
             <img
               src="/Happy_lucas.jpeg"
               alt="Lucas Gómez-Tobón"
               className="about-image"
             />
+            {/* CV Download Button */}
+            <a
+              href="/Lucas Gomez - CV (2025-11).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-primary-hover transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <FileText size={18} />
+              <span className="font-medium">CV</span>
+            </a>
           </div>
 
           {/* Content Side */}
           <div className="about-text-container">
-            {/* Current Role */}
+
+            {/* Current Role - Updated with Project Names */}
             <section className="about-section">
               <h2 className="about-section-title">Current Role</h2>
               <p className="about-text">
-                I am a PhD student at the University of Waterloo advised by <a href="https://edithlaw.ca" target="_blank" rel="noopener noreferrer">Edith Law</a>, working at the intersection of <strong>Human-AI Interaction</strong> and the <strong>Future of Education and Work</strong>.
+                I am a PhD student at the University of Waterloo advised by <a href="https://edithlaw.ca" target="_blank" rel="noopener noreferrer">Edith Law</a>.
+                I characterize myself as a <strong>builder who runs experiments</strong>: I engineer full-stack platforms to measure the causal mechanisms of AI interventions.
               </p>
 
               <p className="about-text">
@@ -31,61 +44,56 @@ function About() {
               </p>
               <ul className="about-list">
                 <li>
-                  <strong>Education:</strong> Students often passively consume AI outputs. I design "learning-by-teaching" agents that intentionally make
-                  mistakes, forcing students to explain concepts and correct errors to develop cognitive and metacognitive skills.
+                  <strong><a href="/blog/social-agentics">Social Agentics:</a></strong> How do AI agents navigate social ambiguity? I developed the <strong>Coordination Laboratory</strong>, a multi-agent testbed that uses Activity Theory and personas (inspired by <em>The Office</em>) to simulate complex workplace negotiations.
                 </li>
                 <li>
-                  <strong>Social Agentics:</strong> I build agentic systems that are explicitly situated
-                  within specific organizational contexts, allowing them to navigate workplace norms and social ambiguity.
+                  <strong><a href="/blog/teaching-the-agent">AI for Education:</a></strong> Students often passively consume AI outputs. I design "learning-by-teaching" systems, such as <strong>Learning by Debugging</strong>, where students must identify and correct intentional errors made by an AI peer.
                 </li>
               </ul>
-
-              <p className="about-text">
-                I am a <strong>builder who runs experiments</strong>. I create scalable platforms that allow us to measure the causal mechanisms of these interventions.
-                I draw on my background in Economics and prior leadership roles in multi-country risk management to handle complex stakeholder interventions.
-              </p>
-
-              <p className="about-text">
-                I also serve as an Adjunct Professor at Universidad de los Andes, teaching <a href="https://github.com/lgomezt/Intro_Python" target="_blank" rel="noopener noreferrer">Introduction to Python</a>.
-              </p>
             </section>
 
-            {/* Education */}
+            {/* Teaching - Added Futures Lab */}
             <section className="about-section">
-              <h2 className="about-section-title">Education</h2>
+              <h2 className="about-section-title">Teaching & Service</h2>
               <p className="about-text">
-                My academic background is in Economics, holding both a Master's and Bachelor's degree from Universidad de los Andes in Colombia.
+                Beyond research, I actively teach:
               </p>
+              <ul className="about-list">
+                <li>
+                  <strong>Futures Lab Workshop:</strong> I co-organize an 8-week workshop on GenAI-driven product design at UWaterloo.
+                </li>
+                <li>
+                  <strong>Adjunct Professor:</strong> I teach <a href="https://github.com/lgomezt/Intro_Python" target="_blank" rel="noopener noreferrer">Introduction to Python</a> at Universidad de los Andes.
+                </li>
+              </ul>
             </section>
 
-            {/* Professional Experience */}
+            {/* Professional Experience - Injected TidyX and Impact */}
             <section className="about-section">
-              <h2 className="about-section-title">Professional Experience</h2>
+              <h2 className="about-section-title">Professional Background</h2>
               <p className="about-text">
-                Prior to my PhD, my professional experience focused on applied mathematics and finance:
+                My background is in Economics (M.A. & B.A.), but I spent my pre-PhD career building data products and managing risk.
               </p>
 
               <div className="about-experience-grid">
                 <div className="about-experience-card">
                   <h3 className="about-experience-title">Financial Risk Management</h3>
                   <p className="about-experience-text">
-                    Led the <span className="font-bold">Financial Risk department for operations in Colombia, Panamá, and Miami</span>. I held responsibility for over 4.8 billion USD in AUM and 100,000 client accounts across these three regions.
+                    Led the <span className="font-bold">Financial Risk department</span> for a major stockbroker, overseeing operations in Colombia, Panamá, and Miami. I managed risk for over <strong>$4.8 billion USD in AUM</strong>.
                   </p>
                 </div>
 
                 <div className="about-experience-card">
-                  <h3 className="about-experience-title">Data Mining & Applied Math</h3>
+                  <h3 className="about-experience-title">Engineering & Applied Math</h3>
                   <p className="about-experience-text">
-                    I progressed from Junior Researcher to Deputy Director of the Data Mining Department at an
-                    <a href="https://quantil.co/en/" target="_blank" rel="noopener noreferrer"> applied math lab</a>.
-                    My work included deploying machine learning models for credit scoring, fraud detection, portfolio optimization, and macroeconomic forecasting.
+                    At <a href="https://quantil.co/en/" target="_blank" rel="noopener noreferrer">Quantil</a>, I progressed to Deputy Director of Data Mining. I developed <strong><a href="https://tidyx.readthedocs.io/en/latest/">tidyX</a></strong> (an open-source library with 7k+ downloads) and deployed production ML models for credit scoring and fraud detection.
                   </p>
                 </div>
 
                 <div className="about-experience-card">
                   <h3 className="about-experience-title">Economic Research</h3>
                   <p className="about-experience-text">
-                    I began my research career as an Assistant at the Center for Economic Development Studies (CEDE), focusing on network analysis projects.
+                    Started as a Research Assistant at CEDE, where I cut my teeth on large-scale data processing, including analyzing <strong>45 million tweets</strong> to map political polarization.
                   </p>
                 </div>
               </div>
@@ -99,4 +107,3 @@ function About() {
 }
 
 export default About
-
